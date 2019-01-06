@@ -154,7 +154,7 @@ https://github.com/xiaosenzeng/gsf/tree/master/src/Storage/mysql/xorm.go
 2）每个worker独立调度全量任务，无需与master产生直接rpc  
 3）每个worker利用分布式锁抢占，解决并发调度相同任务的问题  
 ## 代码:
-https://github.com/xiaosenzeng/gsf/tree/master/src/DistributeCrontab  
+https://github.com/zengxiaosen/GsfWheel/tree/master/src/DistributeCrotab
 ## 界面
 ![Image text](https://img-blog.csdnimg.cn/20190105165235570.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbmd4aWFvc2Vu,size_16,color_FFFFFF,t_70)
 ## worker服务注册(使用租约是为了worker宕机让他自动下限，也就是利用租约到期来避免worker宕机还在列表中，过期后key就会被删除，从而下线)
